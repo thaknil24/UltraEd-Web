@@ -1,0 +1,6 @@
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url('https://media.istockphoto.com/photos/computer-programmer-working-on-laptop-picture-id1265176772?b=1&k=6&m=1265176772&s=170667a&w=0&h=ILWFMcylzavgcEytThbTON1I6VCfQaX-c1ce1_Kcd3s=');
+  background-size: cover;
+}
