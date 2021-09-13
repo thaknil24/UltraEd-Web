@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Our Team | UltraEd{% endblock %}
+
+{% block content %}
+<style>
+.person {
+    display:inline-block;
+    margin-top:200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    border-radius:30px;
+    margin-left:3%;
+    margin-top:2%;
+}
+#title {
+    display:block;
+  color: grey;
+  font-size: 18px;
+}
+
+button, #back {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #2F5DA8;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+#socLink {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, #socLink:hover, #back:hover {
+  opacity: 0.7;
+}
+</style>
+<!--Vishwa-->
+<p style="text-align:center; font-size:40px; padding-top:10%;">Meet The Team</p>
+<div class="person" style="margin-left:10%;">
+      <img id="profPic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxLIqXIJjhwHF3KNj7cwAd5OYFNUCawU_buBjlNEmZkmKXO2buUL4lVeXJRzwIYALDm8&usqp=CAU" alt="John" style="width:100%">
+  <h1 id="name">Vishwa Senthil</h1>
+  <p id="title">Co-founder</p>
+  <p id="info" style="display:none; padding:5%;">Hey! My name is Vishwa and I'm a rising sophomore at Newport High School. I have been coding in Java and Python for 3 years now. In my free time, I enjoy playing tennis, hanging out with friends, watching TV, and coding.</p>
+  <div style="margin: 24px 0;">
+    <a id="socLink" href="https://www.snapchat.com/add/vishwasenthil21" target="_blank"><img src="https://static.wixstatic.com/media/d8c511642aa5484397a1631593222d52.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/d8c511642aa5484397a1631593222d52.webp"></a>
+    <a id="socLink" href="https://www.instagram.com/vishwasenthil21/" target="_blank"><img src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/9f9c321c774844b793180620472aa4f1.webp"></a>
+    <a id="socLink" href="https://www.linkedin.com/in/vishwa-senthil-794618210/" target="_blank"><img src="https://static.wixstatic.com/media/48a2a42b19814efaa824450f23e8a253.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/48a2a42b19814efaa824450f23e8a253.webp"></a>
+  </div>
+  <button id="abtMe" onclick="document.getElementById('title').style.display='none'; document.getElementById('name').style.display='none'; document.getElementById('profPic').style.display='none'; document.getElementById('info').style.display='block'; document.getElementById('abtMe').style.display='none'; document.getElementById('back').style.display='inline-block';">About Me</button>
+  <button id="back" style="display:none;" onclick="document.getElementById('title').style.display='block'; document.getElementById('name').style.display='block'; document.getElementById('profPic').style.display='block'; document.getElementById('info').style.display='none'; document.getElementById('back').style.display='none'; document.getElementById('abtMe').style.display='inline-block';">Back</button>
+</div>
+
+<!-- Nilesh -->
+<div class="person">
+      <img id="profPic2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxLIqXIJjhwHF3KNj7cwAd5OYFNUCawU_buBjlNEmZkmKXO2buUL4lVeXJRzwIYALDm8&usqp=CAU" alt="John" style="width:100%">
+  <h1 id="name2">Nilesh Thakur</h1>
+  <p id="title2">Co-founder</p>
+  <p id="info2" style="display:none; padding:5%;">Hello, my name is Nilesh, and I am a freshman at Newport high school. I have been programming since 5th grade, continuing my passion throughout middle school and even now, in high school. I hope these lessons will help students passionate in coding start to experience the real aspects of programming.</p>
+  <div style="margin: 24px 0;">
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/d8c511642aa5484397a1631593222d52.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/d8c511642aa5484397a1631593222d52.webp"></a>
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/9f9c321c774844b793180620472aa4f1.webp"></a>
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/48a2a42b19814efaa824450f23e8a253.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/48a2a42b19814efaa824450f23e8a253.webp"></a>
+  </div>
+  <button id="abtMe2" onclick="document.getElementById('title2').style.display='none'; document.getElementById('name2').style.display='none'; document.getElementById('profPic2').style.display='none'; document.getElementById('info2').style.display='block'; document.getElementById('abtMe2').style.display='none'; document.getElementById('back2').style.display='inline-block';">About Me</button>
+  <button id="back2" style="display:none;" onclick="document.getElementById('title2').style.display='block'; document.getElementById('name2').style.display='block'; document.getElementById('profPic2').style.display='block'; document.getElementById('info2').style.display='none'; document.getElementById('back2').style.display='none'; document.getElementById('abtMe2').style.display='inline-block';">Back</button>
+</div>
+
+<!-- Sean -->
+<div class="person">
+      <img id="profPic3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxLIqXIJjhwHF3KNj7cwAd5OYFNUCawU_buBjlNEmZkmKXO2buUL4lVeXJRzwIYALDm8&usqp=CAU" alt="John" style="width:100%">
+  <h1 id="name3">Sean Park</h1>
+  <p id="title3">Secretary</p>
+  <p id="info3" style="display:none; padding:5%;">Hi! My name is Sean! I'm a rising sophomore at Interlake High School. I have several years of experience in coding, mainly in Java and some Python. My additional interests include math and biology and during my free time, I enjoy playing chess when I'm free and often enjoy listening to music.</p>
+  <div style="margin: 24px 0;">
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/d8c511642aa5484397a1631593222d52.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/d8c511642aa5484397a1631593222d52.webp"></a>
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/9f9c321c774844b793180620472aa4f1.webp"></a>
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/48a2a42b19814efaa824450f23e8a253.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/48a2a42b19814efaa824450f23e8a253.webp"></a>
+  </div>
+  <button id="abtMe3" onclick="document.getElementById('title3').style.display='none'; document.getElementById('name3').style.display='none'; document.getElementById('profPic3').style.display='none'; document.getElementById('info3').style.display='block'; document.getElementById('abtMe3').style.display='none'; document.getElementById('back3').style.display='inline-block';">About Me</button>
+  <button id="back3" style="display:none;" onclick="document.getElementById('title3').style.display='block'; document.getElementById('name3').style.display='block'; document.getElementById('profPic3').style.display='block'; document.getElementById('info3').style.display='none'; document.getElementById('back3').style.display='none'; document.getElementById('abtMe3').style.display='inline-block';">Back</button>
+</div>
+
+<!-- Krish -->
+<div class="person">
+      <img id="profPic4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxLIqXIJjhwHF3KNj7cwAd5OYFNUCawU_buBjlNEmZkmKXO2buUL4lVeXJRzwIYALDm8&usqp=CAU" alt="John" style="width:100%">
+  <h1 id="name4">Krish Angra</h1>
+  <p id="title4">Representative</p>
+  <p id="info4" style="display:none; padding:5%;">Hi! My name is Krish Angra and I will be entering my Sophomore year at Newport High School. I've always loved programming since I started writing my first line of code with Python. I later moved on to Java and have been doing it for a year and a half now. I generally spend most of my time with soccer, chess, programming, and video games.</p>
+  <div style="margin: 24px 0;">
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/d8c511642aa5484397a1631593222d52.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/d8c511642aa5484397a1631593222d52.webp"></a>
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/9f9c321c774844b793180620472aa4f1.webp"></a>
+    <a id="socLink" href="#"><img src="https://static.wixstatic.com/media/48a2a42b19814efaa824450f23e8a253.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/48a2a42b19814efaa824450f23e8a253.webp"></a>
+  </div>
+  <button id="abtMe4" onclick="document.getElementById('title4').style.display='none'; document.getElementById('name4').style.display='none'; document.getElementById('profPic4').style.display='none'; document.getElementById('info4').style.display='block'; document.getElementById('abtMe4').style.display='none'; document.getElementById('back4').style.display='inline-block';">About Me</button>
+  <button id="back4" style="display:none;" onclick="document.getElementById('title4').style.display='block'; document.getElementById('name4').style.display='block'; document.getElementById('profPic4').style.display='block'; document.getElementById('info4').style.display='none'; document.getElementById('back4').style.display='none'; document.getElementById('abtMe4').style.display='inline-block';">Back</button>
+</div>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Join | UltraEd{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background-color:#f2f2f2;
+    }
+    #text {
+        padding-left:20%;
+        font-size:22px;
+        margin-top:30px;
+    }
+    #teacher {
+        transition-duration:0.4s;
+        background-color:#2F5DA8;
+        border-radius:5px;
+        padding:7px;
+        border:none;
+        color:white;
+    }
+    #teacher:hover {
+        background-color:black;
+        transition-duration:0.4s;
+    }
+    #teacher:focus {
+        outline:none;
+    }
+    #moreInfo {
+        transition-duration:0.4s;
+        background-color:white;
+        border:2px solid #2F5DA8;
+        border-radius:5px;
+        padding:7px;     
+    }
+    #moreInfo:hover {
+        background-color:#2F5DA8;
+        color:white;
+        transition-duration:0.4s;
+    }
+    #moreInfo:focus {
+        outline:none;
+    }
+</style>
+<h2 style="padding-top:10%; padding-left: 20%; font-size:72px; font-family: 'Lato', sans-serif;">UltraEd Student</h2>
+<button id="teacher" type="submit" style="margin-top:-60%; margin-left:55%; width:30%;" onclick="studentForm()">Become a Student!</button>
+<p id="text">By becoming a student, you will learn<br>improve your skills in coding!</p>
+<p id="text">Start your student experience by clicking<br>the link to the google form!</p>
+
+
+<h2 style="padding-top:10%; padding-left: 20%; font-size:72px; font-family: 'Lato', sans-serif;">UltraEd Teaching</h2>
+<button id="teacher" type="submit" style="margin-top:-60%; margin-left:55%; width:30%;" onclick="teacherForm()">Become a Teacher!</button>
+<p id="text">Our teaching program is a great way to<br>improve your teaching skills and to get<br>volunteer hours.</p>
+<button id="moreInfo" type="submit" style="margin-top:-60%; margin-left:55%; width:30%;" onclick="moreInfo()">More information</button>
+<p id="text">By becoming a teacher, you will be helping<br>younger kids to understand complex topics.</p>
+<p id="text">For more information, please click on the<br>button that says "More Information".</p>
+
+<script>
+    function teacherForm() {
+        window.open("https://forms.gle/PDrfFYenJJyaTcXf7", "_blank");
+    }
+    function moreInfo() {
+        window.open("https://docs.google.com/document/d/1xT93Vymkm_ScJFgbe01KFsu0sOROvzcr-1DReGmWN-o/edit?usp=sharing", "_blank");
+    }
+    function studentForm(){
+        window.open("https://forms.gle/7vUmSz9bDrsDN9oS6", "_blank");
+
+    }
+</script>
+{% endblock %}

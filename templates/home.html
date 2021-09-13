@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}UltraEd - Free online classes for students{% endblock %}
+
+{% block content %}
+
+<style>
+    body {
+        margin-bottom:50px;
+    }
+    #vertLine {
+        height:500px;
+        width:3px;
+        background-color:black;
+        margin-left:50%;
+    }
+    #volunteer {
+        height:500px;
+        width:100%;
+        background-color:#77D455;
+    }
+    #abtUs {
+        height:500px;
+        width:100%;
+        background-color:#4285F4;
+        color:white;
+    }
+    #equality {
+        height:500px;
+        width:100%;
+        background-color:#FF5E5E;
+        color:white;
+    }
+    #join {
+        margin-top:40px;
+    }
+    button {
+        transition-duration:0.4s;
+        background-color:#2F5DA8;
+        border-radius:5px;
+        margin-left:42.5%;
+        width:15%;
+        padding:7px;
+        border:none;
+        color:white;
+    }
+    button:hover {
+        background-color:black;
+        transition-duration:0.4s;
+    }
+    button:focus {
+        outline:none; 
+    }
+</style>
+<div style="background-image: url(https://static.wixstatic.com/media/fadcb0_da72c6898d9f44989062ba842116f6c9~mv2.png); background-size:cover; width: 100%;
+height: 850px;"><h1 style="padding: 300px; padding-left: 30px; font-size: 50px; text-shadow: 2px 2px #ccc;">A nonprofit with a goal to
+ teach<br>children essential computer<br>science skills.</h1></div>
+
+ <div id="volunteer">
+ <h1 style="font-size:72px; color:white; padding-left:15%; padding-top:5%;">VOLUNTEER</h1>
+ <h4 style="padding-left:5%; padding-top:3%;">Want to share your skills with others? Just click on the button below!</h4>
+ <button id="teacher" type="submit" style="margin-left:17%; margin-top:3%;" onclick="teacherForm()">Become a Teacher!</button>
+ </div>
+
+<div id="abtUs">
+ <h1 style="font-size:72px; text-align:center; padding-top:5%;">ABOUT US</h1>
+ <h4 style="text-align:center; padding-top:3%;">We are a non-profit organization created<br>by a group of high school students. We<br>created this program to teach<br>fundamental computer science skills to<br>kids for free.</h4>
+</div>
+
+ <div id="equality">
+ <h1 style="font-size:72px; color:white; padding-left:50%; padding-top:5%;">EQUALITY</h1>
+ <h4 style="padding-left:50%; padding-top:3%;">UltraEd cares about equality. This is why all<br>of our classes are free and accessible to everyone.</h4>
+ 
+ </div>
+
+ <div id="join">
+    <h1 style="text-align:center; font-size:72px; text-shadow: 2px 2px #ccc;">JOIN ULTRAED</h1>
+    <button id="student" type="submit" style="margin-top:30px;" onclick="studentForm();">Become a student</button>
+    <br>
+    <br>
+    <button id="teacher" type="submit" onclick="teacherForm()">Become a teacher</button>
+ </div>
+
+ <script>
+    function teacherForm() {
+        window.open("https://forms.gle/PDrfFYenJJyaTcXf7", "_blank");
+    }
+    function studentForm() {
+        window.open("https://forms.gle/gkrFQNoHxLX3pNWt9", "_blank");
+    }
+</script>
+
+
+{% endblock %}

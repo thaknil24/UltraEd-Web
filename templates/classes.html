@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Classes | UltraEd{% endblock %}
+
+{% block content %}
+<style>
+    #text {
+        font-size:40px;
+        padding-top:10%;
+    }
+    button {
+        transition-duration:0.4s;
+        background-color:#2F5DA8;
+        border-radius:5px;
+        padding:7px;
+        border:none;
+        color:white;
+        width:25%;
+        margin-top:40px;
+        margin-left:37%;
+    }
+    button:hover {
+        background-color:black;
+        transition-duration:0.4s;
+    }
+    button:focus {
+        outline:none;
+    }
+
+    .container-p4 {
+        margin-top:300px
+    }
+</style>
+<p id="text" style="text-align:center;">We will be releasing our future classes soon. In the<br>meantime, please click on the button below to give<br>us ideas.</p>
+<button id="interestSurvey" onclick="intSurveyForm()">Interest Survey</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script>
+function intSurveyForm() {
+    window.open("https://forms.gle/E86U3BSMvYPSnNMQ8", "_blank");
+}
+</script>
+{% endblock %}

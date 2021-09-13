@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" 
+      type="image/png" 
+      href="https://api.freelogodesign.org/files/ab660c11ba2e4676b6d98922a5969719/thumb/logo_200x200.png?v=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/ogw/ADea4I7oj4ouRt4a-Cm7gy_yp8W2JdqQ80E7VL6lUN0i=s83-c-mo"/>
+</head>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("mainNav").style.boxShadow = "0 8px 6px -6px black";
+      } else {
+        document.getElementById("mainNav").style.boxShadow = "0 0px 0px 0px";
+      }
+    }
+</script>
+<style>
+    body {
+        background-color:#f2f2f2;
+        animation: fadeInAnimation ease 1s;
+    }
+    footer {
+        padding: 15px;
+        background-color:#ccc;
+    }
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+    }
+    #notification {
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:25px;
+        background-color:#2F5DA8;
+        z-index:100;
+    }
+    #logo:hover {
+        opacity:0.7;
+    }
+    .nav-link:hover {
+        opacity:0.7;
+    }
+</style>
+<body>
+
+    <div id="notification">
+    <p style="text-align:center; color:white; z-index:101;">We are still working on making this website responsive on mobile. Please view this website on a desktop till then.</p>
+    </div>
+    
+    	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="margin-bottom:100px; background-color:white; transition-duration:0.4s; margin-bottom:100px;">
+		<div class="container">
+            <div class="header-img"></div>
+			<a class="navbar-brand"  href="/home"><img id="logo" src="https://static.wixstatic.com/media/fadcb0_57c316b18b1f4f81aac0de1bd4b87504~mv2.jpg" alt="Logo" /></a>
+                
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link"  style="color: rgb(0, 0, 0); margin-right:70px;" href="/home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link"  style="color: rgb(0, 0, 0); margin-right:70px;"href="/join">Join</a></li>
+                        <li class="nav-item"><a class="nav-link"  style="color: rgb(0, 0, 0); margin-right:70px;"href="/classes">Classes</a></li>
+                        <li class="nav-item"><a class="nav-link"  style="color: rgb(0, 0, 0); margin-right:70px;"href="/contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link"  style="color: rgb(0, 0, 0); margin-right:70px;"href="/ourteam">Our Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% block content %}
+
+        {% endblock %}
+
+        <!-- Footer -->
+  <footer class="text-center " style="min-height:15%; margin-bottom:-15%; margin-top: 100px; background:fixed; background-color:white; box-shadow: 0 -9px 10px 3px rgba(0, 0, 0, 0.2); display:inline-block; bottom:0; width:100%;">
+  <!--Grid container-->
+  <div class="container p-4">
+
+     <!--Section: Social media--> 
+    <section class= "mb-4">
+
+    <a href="/home" style="margin:0 auto;"><img src="https://static.wixstatic.com/media/fadcb0_57c316b18b1f4f81aac0de1bd4b87504~mv2.jpg"></a>
+    <br>
+
+      <!--Instagram--> 
+      <a href="https://www.instagram.com/_ultra.ed_/" role="button"><img style="padding-top:2%;" src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/9f9c321c774844b793180620472aa4f1.webp"></a>
+
+     <!--Linkedin--> 
+      <a href="https://www.linkedin.com/in/ultraed-team-46227721b" role="button"><img style="padding-top:2%;" src="https://static.wixstatic.com/media/48a2a42b19814efaa824450f23e8a253.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/48a2a42b19814efaa824450f23e8a253.webp"></a>
+    </section> 
+    <!-- Section: Social media  -->
+
+
+
+     <!--Section: Text-->
+    <section class="mb-4">
+      <p>
+        Our mission is to teach
+        essential skills to children for
+        free. This will allow every child
+        to have a chance to thrive.
+      </p>
+    </section>
+     <!--Section: Text-->
+
+
+  </div>
+   <Grid> <!--container--> 
+
+  <!--Copyright--> 
+  <div class="text-center p-3">
+    © 2021 Copyright:
+    <a class="text-dark" href="/home">UltraEd</a>
+  </div>
+   <!--Copyright-->
+
+</footer>
+
+
+        <script src="scripts.js"></script>
+       
+
+</body>
+</html>
